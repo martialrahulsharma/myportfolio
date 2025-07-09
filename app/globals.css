@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -22,5 +24,102 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
+  background: #0a0a0a;
+  color: white;
 }
+
+/* apply font on portfolio text */
+.font-Satisfy{
+  font-family: 'Satisfy', cursive;
+}
+
+.bg-deepPurple {
+        background-color: #15091b
+      }
+
+/* apply color gradient on portfolio */
+@keyframes gradient-x {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 400% 400%;
+  animation: gradient-x 6s ease infinite;
+}
+
+/*start here applied rotation on avatar */
+.circle-style {
+  fill: transparent;
+  stroke-linecap: round;
+  transform-origin: center;
+}
+
+/* Individual Circles */
+.circle-1 {
+  stroke: #06b6d4;
+  stroke-dasharray: 424;
+  animation: rotate 6s linear infinite;
+}
+
+.circle-2 {
+  stroke: #8b5cf6;
+  stroke-dasharray: 424;
+  animation: rotate-reverse 8s linear infinite;
+}
+
+.circle-3 {
+  stroke: #22d3ee;
+  opacity: 0.6;
+  stroke-dasharray: 325;
+  animation: rotate 5s linear infinite;
+}
+
+.circle-4 {
+  stroke: #3b82f6;
+  stroke-dasharray: 240;
+  animation: rotate-reverse 7s linear infinite;
+}
+
+/* Animations */
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes rotate-reverse {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+/*end here applied rotation on avatar */
+
+/* springy jump effect start */
+@keyframes springJump {
+  0%   { transform: scale(1) translateY(0); }
+  20%  { transform: scale(1.2) translateY(-20px); }
+  30%  { transform: scale(0.95) translateY(8px); }
+  40%  { transform: scale(1.1) translateY(-10px); }
+  50%  { transform: scale(0.98) translateY(6px); }
+  60%  { transform: scale(1.05) translateY(-6px); }
+  70%  { transform: scale(1) translateY(3px); }
+  100% { transform: scale(1) translateY(0); }
+}
+
+.spring-jump {
+  animation: springJump 2s ease-out;
+}
+
+/* scrolled based animation start */
+@keyframes fadeUp {
+  0% { opacity: '0'; transform: 'translateY(50px)' }
+  100% { opacity: '1'; transform: 'translateY(0)' }
+}
+
+.animation {
+        animation: 'fadeUp 0.6s ease-out forwards',
+      }
+
