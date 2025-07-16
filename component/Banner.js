@@ -24,13 +24,13 @@ const Banner = () => {
             on the Internet.
           </p>
           <div className="flex justify-evenly w-full mt-10">
-            <Link href="https://www.instagram.com/martialrahul/">
+            <Link target="_blank" href="https://www.instagram.com/martialrahul/">
               <SiInstagram size={40}/>
             </Link>
-            <Link href="www.linkedin.com/in/martialrahul">
+            <Link target="_blank" href="https://www.linkedin.com/in/martialrahul/">
               <AiOutlineLinkedin size={40}/>
             </Link>
-            <Link href="https://github.com/martialrahulsharma">
+            <Link target="_blank" href="https://github.com/martialrahulsharma">
               <VscGithub size={40} />
             </Link>
           </div>

@@ -41,10 +41,23 @@ const MyProjects = () => {
       ],
     },
     project3: {
-      url: "https://martialrahulsharma.github.io/todoapp/",
+      url: "https://martialrahulsharma.github.io/mytodolist/",
       img: "/project/todoApp.png",
       projectName: "My First Todo App",
       projectDescription: `A simple and responsive ToDo app built with React Vite and tailwind CSS. It allows users to add, delete, and manage daily tasks efficiently with a clean user interface.`,
+      projectIcons: [
+        "/icons/React.svg",
+        "/icons/TailwindCss.svg",
+        "/icons/VSCode.svg",
+        "/icons/Github.svg",
+        "/icons/Vite.js.svg",
+      ],
+    },
+    project4: {
+      url: "https://martialrahulsharma.github.io/Tiles-App/",
+      img: "/project/tilesApp.png",
+      projectName: "Tiles Measurement App",
+      projectDescription: `It is a tiles measurement app. Basically when give length, width and height of wall and fulfill other areas then it gives finall result. You can try and check it`,
       projectIcons: [
         "/icons/React.svg",
         "/icons/TailwindCss.svg",
@@ -76,10 +89,10 @@ const MyProjects = () => {
           <div className="flex-1 h-px bg-fuchsia-700" />
         </div>
       </FadeUpOnScroll>
-      <div className="flex flex-col mt-10 gap-y-10">
-        <div className="flex flex-wrap border">
+      <div className="flex flex-col mt-10">
+        <div className="flex flex-wrap box-border"> 
           {Object.entries(projectsData).map(([key, project]) => (
-            <div className="flex flex-col md:flex-wrap lg:w-1/3 m-4 ">
+            <div className="flex flex-col md:flex-wrap lg:w-[32%] m-2 rounded-2xl overflow-hidden border">
               <ProjectsCard
                 key={key}
                 projectUrl={project.url}

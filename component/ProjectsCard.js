@@ -3,21 +3,11 @@ import Link from "next/link";
 import React from "react";
 
 const ProjectsCard = ({projectUrl, projectImage, projectName, projectDescription, projectIcons}) => {
-  const iconsList = [
-    "/icons/html-5.svg",
-    "/icons/CSS3.svg",
-    "/icons/JavaScript.svg",
-    "/icons/React.svg",
-    "/icons/TailwindCss.svg",
-    "/icons/google-maps.png",
-    "/icons/Firebase.svg",
-    "/icons/cashless-payment.png",
-  ];
   return (
     <Link
       href={projectUrl}
       target="_blank"
-      className="flex flex-col"
+      className="flex flex-col rounded-2xl"
     >
       <div className="h-48 w-full flex items-start justify-center overflow-hidden relative">
         <Image

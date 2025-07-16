@@ -4,6 +4,7 @@ import Banner from "@/component/Banner";
 import Navbar from "@/component/Navbar";
 import TeckStack from "@/component/TeckStack";
 import MyProjects from "@/component/MyProjects";
+import Contact from "@/component/Contact";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <AboutMe />
       <TeckStack />
       <MyProjects />
+      <Contact />
     </div>
   );
 }
