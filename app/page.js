@@ -5,6 +5,7 @@ import Navbar from "@/component/Navbar";
 import TeckStack from "@/component/TeckStack";
 import MyProjects from "@/component/MyProjects";
 import Contact from "@/component/Contact";
+import Footer from "@/component/Footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <TeckStack />
       <MyProjects />
       <Contact />
+      <Footer />
     </div>
   );
 }
