@@ -83,14 +83,14 @@ const Contact = () => {
             </div>
           </div>
           {/* contact me form start here */}
-          <form className="flex-col md:w-1/2 w-full">
+          <form className="flex-col md:w-1/2 w-full bg-black">
             <div className="flex flex-col p-6 bg-deepPurple text-xl gap-y-4 rounded-md">
               <div>
                 <label>Name</label>
                 <input
                   type="text"
                   placeholder="Enter Your Name"
-                  className="w-full p-2 bg-black rounded-md mt-2"
+                  className="w-full p-2 bg-[#0a0a0a] rounded-md mt-2"
                 />
               </div>
               <div>
@@ -98,20 +98,20 @@ const Contact = () => {
                 <input
                   type="email"
                   placeholder="example@gmail.com"
-                  className="w-full p-2 bg-black rounded-md mt-2"
+                  className="w-full p-2 bg-[#0a0a0a] rounded-md mt-2"
                 />
               </div>
               <div>
                 <label>Message</label>
                 <textarea
                   placeholder="Enter Your Message"
-                  className="w-full p-2 bg-black rounded-md mt-2 resize-none h-28"
+                  className="w-full p-2 bg-[#0a0a0a] rounded-md mt-2 resize-none h-28"
                 />
               </div>
               <div>
                 <button
                   type="submit"
-                  className="w-full lg:w-1/2 p-2 bg-black rounded-md flex items-center justify-center gap-2 text-white cursor-pointer"
+                  className="w-full lg:w-1/2 p-2 bg-[#0a0a0a] rounded-md flex items-center justify-center gap-2 text-white cursor-pointer"
                 >
                   Submit <MdSend size={20} />
                 </button>
