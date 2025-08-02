@@ -29,10 +29,10 @@ export default function Home() {
       scrollToContact = {()=>scrollToSection(contactRef)}
       />
       <Banner />
-      <AboutMe refProp={aboutMeRef} />
-      <TeckStack refProp={techStackRef} />
-      <MyProjects refProp={myProjectsRef} />
-      <Contact refProp={contactRef} />
+      <AboutMe ref={aboutMeRef} />
+      <TeckStack ref={techStackRef} />
+      <MyProjects ref={myProjectsRef} />
+      <Contact ref={contactRef} />
       <Footer />
     </div>
   );

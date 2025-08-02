@@ -1,11 +1,10 @@
 "use client"
-import React, {useState} from "react";
+import React from "react";
 import { GiTireIronCross } from "react-icons/gi";
 import { VscListSelection } from "react-icons/vsc";
 import { MdOutlineFileDownload } from "react-icons/md";
 
 const Navbar = ({ scrollToAbout, scrollToTechStack, scrollToMyProjects, scrollToContact }) => {
-    const [toggleNavbar, setToggleNavbar] = useState(false);
 
   return (
     <div className="sticky z-50 top-0 backdrop-blur-sm">

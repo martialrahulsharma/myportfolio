@@ -1,4 +1,4 @@
-import React from "react";
+import React, {forwardRef} from "react";
 import FadeUpOnScroll from "./hooks/FadeUpOnScroll";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
@@ -8,10 +8,10 @@ import { VscGithub } from "react-icons/vsc";
 import { MdSend } from "react-icons/md";
 import Link from "next/link";
 
-const Contact = () => {
+const Contact = forwardRef((props, ref) => {
   return (
     <>
-      <div className="mt-20 gap-4 px-4">
+      <div ref={ref} className="mt-20 gap-4 px-4">
         <FadeUpOnScroll>
           <div className="flex flex-row justify-center items-center text-center">
             <div className="flex-1 h-px border border-fuchsia-700"></div>
@@ -123,6 +123,6 @@ const Contact = () => {
       </div>
     </>
   );
-};
+});
 
 export default Contact;

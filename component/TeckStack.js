@@ -1,16 +1,15 @@
 "use client";
-import React from "react";
+import React, {forwardRef} from "react";
 import FadeUpOnScroll from "./hooks/FadeUpOnScroll";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
-import { FaCss3Alt } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 
-const TeckStack = () => {
+const TeckStack = forwardRef((props, ref) => {
   return (
-    <>
-      <div className="mt-20 gap-4 px-4">
+    <section ref={ref} className="mt-20">
+      <div className="gap-4 px-4">
         <FadeUpOnScroll>
           <div className="flex flex-row justify-center items-center text-center">
             <div className="flex-1 h-px border border-fuchsia-700"></div>
@@ -327,8 +326,8 @@ const TeckStack = () => {
           </div>
         </FadeUpOnScroll>
       </div>
-    </>
+    </section>
   );
-};
+});
 
 export default TeckStack;

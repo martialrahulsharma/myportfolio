@@ -1,17 +1,17 @@
-import React from "react";
+import React, {forwardRef} from "react";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import FadeUpOnScroll from "./hooks/FadeUpOnScroll";
 
-const AboutMe = ({ refProp }) => {
+const AboutMe = forwardRef((props, ref) => {
   return (
-    <section ref={refProp} className="mt-10">
+    <section ref={ref} className="mt-10">
       <FadeUpOnScroll>
-        <div className="flex items-center mt-10 gap-4 px-4">
+        <div className="flex items-center gap-4 px-4">
           {/* Left Arrow */}
           <span className="text-[1.5em] text-fuchsia-700">
             <IoIosArrowBack />
-          </span>
+          </span> 
 
           {/* Title and Right Arrow */}
           <div className="flex items-center gap-2">
@@ -90,6 +90,6 @@ const AboutMe = ({ refProp }) => {
       </div>
     </section>
   );
-};
+});
 
 export default AboutMe;
