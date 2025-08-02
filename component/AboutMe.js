@@ -3,9 +3,9 @@ import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import FadeUpOnScroll from "./hooks/FadeUpOnScroll";
 
-const AboutMe = () => {
+const AboutMe = ({ refProp }) => {
   return (
-    <>
+    <section ref={refProp} className="mt-10">
       <FadeUpOnScroll>
         <div className="flex items-center mt-10 gap-4 px-4">
           {/* Left Arrow */}
@@ -88,7 +88,7 @@ const AboutMe = () => {
           </FadeUpOnScroll>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 
