@@ -128,3 +128,34 @@ body {
         animation: 'fadeUp 0.6s ease-out forwards',
       }
 
+/* styles/dropdown.css */
+@keyframes dropdownOpen {
+  0% {
+    transform: translate(0, 0) scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-100px, -10px, 10px) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes dropdownClose {
+  0% {
+    transform: translate(-100px, -10px, 10px) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 0) scale(0.8);
+    opacity: 0;
+  }
+}
+
+.dropdown-open {
+  animation: dropdownOpen 0.5s ease-out forwards;
+}
+
+.dropdown-close {
+  animation: dropdownClose 0.5s ease-in forwards;
+}
+
